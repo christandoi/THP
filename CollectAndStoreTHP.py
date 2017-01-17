@@ -32,8 +32,10 @@ try:
 		time.sleep(env_logger_config.log_interval)
 
 finally:
-	
-	GPIO.cleanup(self.SCK)
-	GPIO.cleanup(self.CS)
-	GPIO.cleanup(self.SDI)
-	GPIO.cleanup(self.SDO)
+	def cleanup_gpio(self):
+		GPIO.cleanup(self.SCK)
+		GPIO.cleanup(self.CS)
+		GPIO.cleanup(self.SDI)
+		GPIO.cleanup(self.SDO)
+
+	self.cleanup_gpio()
