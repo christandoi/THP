@@ -86,8 +86,8 @@ class bmp183():
                 # Proceed with initial pressure/temperature measurement
                 self.measure_pressure()
 
-        def __del__(self):
-                self.cleanup_gpio()
+        # def __del__(self):
+        #         self.cleanup_gpio()
 
         def set_up_gpio(self):
                 # GPIO initialisation
@@ -97,12 +97,12 @@ class bmp183():
                 GPIO.setup(self.SDI, GPIO.OUT)
                 GPIO.setup(self.SDO, GPIO.IN)
 
-        def cleanup_gpio(self):
-                # GPIO clean up
-                GPIO.cleanup(self.SCK)
-                GPIO.cleanup(self.CS)
-                GPIO.cleanup(self.SDI)
-                GPIO.cleanup(self.SDO)
+        # def cleanup_gpio(self):
+        #         # GPIO clean up
+        #         GPIO.cleanup(self.SCK)
+        #         GPIO.cleanup(self.CS)
+        #         GPIO.cleanup(self.SDI)
+        #         GPIO.cleanup(self.SDO)
 
         def read_byte(self, addr):
                 # Read byte from SPI interface from address "addr"
