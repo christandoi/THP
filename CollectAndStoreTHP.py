@@ -11,7 +11,7 @@ sensor = Adafruit_DHT.AM2302
 insert_sql = """INSERT INTO thp (datetime, temperature, humidity, pressure) VALUES (?,?,?,?) """
 	
 try:
-	
+
 	while True:
 		
 		now = datetime.datetime.now()	
@@ -34,6 +34,6 @@ try:
 finally:
 	
 	GPIO.cleanup(self.SCK)
-    GPIO.cleanup(self.CS)
-    GPIO.cleanup(self.SDI)
-    GPIO.cleanup(self.SDO)
+	GPIO.cleanup(self.CS)
+	GPIO.cleanup(self.SDI)
+	GPIO.cleanup(self.SDO)
