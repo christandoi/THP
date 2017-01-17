@@ -33,7 +33,7 @@ try:
 
 finally:
 	
-	GPIO.cleanup(self.SCK)
-	GPIO.cleanup(self.CS)
-	GPIO.cleanup(self.SDI)
-	GPIO.cleanup(self.SDO)
+	GPIO.cleanup(SCK)
+	GPIO.cleanup(CS)
+	GPIO.cleanup(SDI)
+	GPIO.cleanup(SDO)

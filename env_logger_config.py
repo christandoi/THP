@@ -1,10 +1,10 @@
 dbfile = '/home/THP/env_logger_config.dbfile'
 gpio_port = 4
-log_interval = 60 # 1 minute, in seconds
+log_interval = 6 # 1 minute, in seconds
 display_delay = 5 # seconds
 poll_delay = 0.1 # seconds
 sensor = 2302 # Adafruit Humidity/Temperature sensor AM2302
-self.SCK = 8  # GPIO for SCK, other name SCLK
-self.SDO = 10  # GPIO for SDO, other name MISO
-self.SDI = 12  # GPIO for SDI, other name MOSI
-self.CS = 16  # GPIO for CS, other name CE
+SCK = 8  # GPIO for SCK, other name SCLK
+SDO = 10  # GPIO for SDO, other name MISO
+SDI = 12  # GPIO for SDI, other name MOSI
+CS = 16  # GPIO for CS, other name CE
